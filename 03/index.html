@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="barcode.js"></script>
+<div id="barcodeDiv" style="width: 150px; height: 142px; background-color: aqua"></div>
+
+<script>
+    const targetDiv = document.getElementById("barcodeDiv");
+    const resultBarcodeDiv = renderBarcode({
+        "version": 1,
+        "key": "2zaq4js7qv",
+        "address": "Sadovnicheskaya 82, 2"
+    }, targetDiv);
+
+    targetDiv.replaceWith(resultBarcodeDiv);
+</script>
+
+</body>
+</html>
